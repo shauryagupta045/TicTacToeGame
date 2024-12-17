@@ -1,0 +1,161 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rowdies", sans-serif;
+}
+body {
+    
+    background-color: #783596;
+}
+
+header {
+    background-color:transparent;
+    backdrop-filter:blur(5);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.msg-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    
+}
+
+.hide {
+   display: none;
+}
+
+.game-container {
+    width: 300px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 10%;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 0px  0px 50px rgba(250, 250, 250, 0.2);
+    color:#000;
+    transition: 0.3s ease;
+
+}
+.box:hover{
+    background-color: #797878;
+}
+
+.game-info {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+   
+}
+
+
+
+#score-x, #score-o {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#restart-btn ,
+#new-btn {
+    position: absolute;
+    background-color: #000000;
+    height: 70px;
+    width: 190px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border-radius: 8px;
+}
+
+#restart-btn:hover{
+    background-color: #ffffff;
+    color:#000;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+#new-btn:hover{
+    background-color: #ffffff;
+    color:#000;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+
+#restart-btn{
+ right:55%;
+
+}
+
+#new-btn{
+    left:55%;
+  
+}
+
+#home-page {
+    text-align: center; 
+     margin-top: 15%;
+    padding: 30px;
+}
+   
+
+.game-content  h1{
+    font-size: 60px;
+}
+
+.game-content  button {
+    background-color: #000000;
+    height: 70px;
+    width: 190px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border-radius: 8px;
+}
+
+.game-content  button:hover{
+    background-color: #ffffff;
+    color:#000;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.game-content a{
+    color: #000;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="ttt.css">
+</head>
+<body>
+
+    <div class="game-content"  id="home-page">
+        <h1>Tic Tac Toe Game</h1>
+        <h3><button  onclick="start()" id="play">Let's play</button></h3>
+        <h5><a href=""> How to play ?</a></h5>
+
+    </div>
+    <div class="msg-container   hidden   hide" id="game-page">
+        <p id ="msg">Winner</p>
+    </div>
+    <main>
+        <div class="game-container">
+            <div class="game-board">
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+              <button class="box"></button>
+            </div>
+            <div class="game-info">
+                <p id="game-status"></p>
+                <p>Total Score:</p>
+                <p id="score-x">X: 0</p>
+                <p id="score-o">O: 0</p>
+                <button id="restart-btn">Restart</button>
+                <button id="new-btn">New Game</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="ttt.js"></script>
+</body>
+</html>
